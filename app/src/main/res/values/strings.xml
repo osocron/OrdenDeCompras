@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Orden de Compras</string>
+    <string name="title_section1">Search</string>
+    <string name="title_section2">View</string>
+    <string name="title_section3">Order</string>
+    <string name="app_label">Orden de Compras</string>
+    <string name="search_hint">Buscar Artículos</string>
+    <string name="search_title">Orden de Compras</string>
+    <string name="action_orden">Buscar Orden</string>
+    <string name="action_cliente">Cambiar Cliente</string>
+    <string name="title_activity_busqueda_clientes">Busqueda de Clientes</string>
+    <string name="title_activity_busqueda_orden">BusquedaOrden</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.navigation.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "busqueda_clientes">
+        <location        
+          id = "point0"        
+          x = "0"        
+          y = "0"/>
+      </key>
+      <value      
+        x = "1600"      
+        y = "320"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "com.patumecha.osocron.ordendecompras.LoginActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "320"      
+        y = "4320"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "options_menu">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1760"      
+        y = "1440"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "com.patumecha.osocron.ordendecompras.BusquedaClientes">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "320"      
+        y = "0"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.MenuState"      
+        xmlResourceName = "busqueda_orden">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "1760"      
+        y = "2880"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "com.patumecha.osocron.ordendecompras.searchActivity">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "320"      
+        y = "1440"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+    <entry>
+      <key      
+        class = "com.android.navigation.ActivityState"      
+        className = "com.patumecha.osocron.ordendecompras.BusquedaOrden">
+        <location        
+          idref = "point0"/>
+      </key>
+      <value      
+        x = "320"      
+        y = "2880"      
+        class = "com.android.navigation.Point"/>
+    </entry>
+  </locations>
+</navigationModel>

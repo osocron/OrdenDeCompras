@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="525dp"
+    android:background="#FF1BD504"
+    android:id="@+id/view_products">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Clave:"
+        android:id="@+id/codigoTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:id="@+id/codigoEditText"
+        android:inputType="text"
+        android:layout_alignBottom="@+id/codigoTextView"
+        android:layout_toRightOf="@+id/codigoTextView"
+        android:layout_marginLeft="5dp"
+        android:textColor="#ffffffff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="-10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sub-clave:"
+        android:id="@+id/subClaveTextView"
+        android:layout_gravity="left"
+        android:layout_below="@+id/codigoEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:id="@+id/subClaveEditText"
+        android:inputType="text"
+        android:layout_alignBottom="@+id/subClaveTextView"
+        android:layout_toRightOf="@+id/subClaveTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_alignRight="@+id/codigoEditText"
+        android:layout_alignEnd="@+id/codigoEditText"
+        android:textColor="#ffffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="-10dp" />
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Clave Rapida:"
+        android:id="@+id/claveRapidTextView"
+        android:layout_below="@+id/subClaveTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/claveRapidEditText"
+        android:inputType="text"
+        android:layout_alignBottom="@+id/claveRapidTextView"
+        android:layout_toRightOf="@+id/claveRapidTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_alignRight="@+id/codigoEditText"
+        android:layout_alignEnd="@+id/codigoEditText"
+        android:textColor="#ffffffff" />
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Descripcion:"
+        android:id="@+id/descripTextView"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/barrasEditText"
+        android:layout_alignStart="@+id/barrasEditText"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Precio:"
+        android:id="@+id/precioMenTextView"
+        android:layout_below="@+id/descripEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffffff" />
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Precio Mayoreo:"
+        android:id="@+id/precMayTextView"
+        android:layout_below="@+id/precioMenTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffffff" />
+-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Existencias:"
+        android:id="@+id/existenTextView"
+        android:layout_below="@+id/precioMenTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffffff" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/existencEditText"
+        android:focusable="false"
+        android:layout_alignBottom="@+id/existenTextView"
+        android:layout_toRightOf="@+id/existenTextView"
+        android:inputType="text"
+        android:textColor="#ffffffff"
+        android:layout_alignEnd="@+id/descripEditText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="5dp" />
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mes Mínimo:"
+        android:id="@+id/mesMinTextView"
+        android:layout_below="@+id/existenTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mes Máximo:"
+        android:id="@+id/mesMaxTextView"
+        android:layout_below="@+id/mesMinTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ventas del Mes:"
+        android:id="@+id/ventasMesTextView"
+        android:layout_below="@+id/mesMaxTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ventas Año Pasado Mes Anterior:"
+        android:id="@+id/anioMesAnteTextView"
+        android:layout_below="@+id/ventasMesTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffffff" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ventas Año Pasado Mes Actual:"
+        android:id="@+id/anioMesActuTextView"
+        android:layout_below="@+id/anioMesAntEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ventas Año Pasado Mes Siguiente:"
+        android:id="@+id/anioMesPosteTextView"
+        android:layout_below="@+id/anioMesActEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffffff" />
+    -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descripEditText"
+        android:focusable="false"
+        android:inputType="text"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/descripTextView"
+        android:layout_alignEnd="@+id/codigoEditText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="-10dp"
+        android:layout_alignStart="@+id/precioMenTextView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/precioMenEditText"
+        android:focusable="false"
+        android:inputType="text"
+        android:textColor="#ffffffff"
+        android:layout_alignBottom="@+id/precioMenTextView"
+        android:layout_toRightOf="@+id/precioMenTextView"
+        android:layout_alignEnd="@+id/descripEditText"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar a la lista de Pedidos"
+        android:id="@+id/pedidosButton"
+        android:textColor="#fffbfbff"
+        style="@android:style/Theme.Holo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/existencEditText"
+        android:layout_marginBottom="20dp"
+        android:layout_alignStart="@+id/existenTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Codigo de Barras:"
+        android:id="@+id/barrasTextView"
+        android:layout_below="@+id/subClaveTextView"
+        android:layout_alignStart="@+id/subClaveTextView"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/barrasEditText"
+        android:inputType="text"
+        android:focusable="false"
+        android:layout_alignStart="@+id/barrasTextView"
+        android:layout_alignEnd="@+id/precioMenEditText"
+        android:textColor="#ffffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/barrasTextView"
+        android:layout_marginTop="-10dp" />
+
+    <!--
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/precioMayEditText"
+        android:layout_above="@+id/existenTextView"
+        android:layout_toRightOf="@+id/precioMenTextView"
+        android:inputType="text"
+        android:layout_alignRight="@+id/descriDetaEditText"
+        android:layout_alignEnd="@+id/descriDetaEditText"
+        android:textColor="#ffffffff" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mesMinEditText"
+        android:layout_above="@+id/mesMaxTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/mesMinTextView"
+        android:inputType="text"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mesMaxEditText"
+        android:layout_alignBottom="@+id/mesMaxTextView"
+        android:layout_toRightOf="@+id/mesMaxTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="text"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ventaMesEditText"
+        android:layout_alignBottom="@+id/ventasMesTextView"
+        android:layout_toRightOf="@+id/ventasMesTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="text"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anioMesAntEditText"
+        android:layout_below="@+id/anioMesAnteTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffffff"
+        android:layout_alignRight="@+id/subClaveEditText"
+        android:layout_alignEnd="@+id/subClaveEditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anioMesActEditText"
+        android:layout_below="@+id/anioMesActuTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/anioMesAntEditText"
+        android:layout_alignEnd="@+id/anioMesAntEditText"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anioMesSigEditText"
+        android:layout_below="@+id/anioMesPosteTextView"
+        android:layout_alignRight="@+id/anioMesActEditText"
+        android:layout_alignEnd="@+id/anioMesActEditText"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/anioMesPosteTextView"
+        android:layout_alignStart="@+id/anioMesPosteTextView"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ventas de hace 1 semanas:"
+        android:id="@+id/semana4TextView"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/semana3EditText"
+        android:layout_alignLeft="@+id/semana3EditText"
+        android:layout_alignStart="@+id/semana3EditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/semana4EditText"
+        android:layout_below="@+id/semana4TextView"
+        android:layout_alignRight="@+id/anioMesActEditText"
+        android:layout_alignEnd="@+id/anioMesActEditText"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/anioMesPosteTextView"
+        android:layout_alignStart="@+id/anioMesPosteTextView"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ventas de hace 4 semanas:"
+        android:id="@+id/semana1TextView"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/anioMesSigEditText"
+        android:layout_alignLeft="@+id/anioMesSigEditText"
+        android:layout_alignStart="@+id/anioMesSigEditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/semana1EditText"
+        android:inputType="text"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/semana1TextView"
+        android:layout_alignLeft="@+id/semana1TextView"
+        android:layout_alignStart="@+id/semana1TextView"
+        android:layout_alignRight="@+id/semana2EditText"
+        android:layout_alignEnd="@+id/semana2EditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/semana2TextView"
+        android:text="Ventas de hace 3 semanas:"
+        android:layout_below="@+id/semana1EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/semana2EditText"
+        android:layout_below="@+id/semana2TextView"
+        android:layout_alignRight="@+id/anioMesActEditText"
+        android:layout_alignEnd="@+id/anioMesActEditText"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/anioMesPosteTextView"
+        android:layout_alignStart="@+id/anioMesPosteTextView"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ventas de hace 2 semanas:"
+        android:id="@+id/semana3TextView"
+        android:layout_below="@+id/semana2EditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/semana3EditText"
+        android:layout_below="@+id/semana3TextView"
+        android:layout_alignRight="@+id/anioMesActEditText"
+        android:layout_alignEnd="@+id/anioMesActEditText"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:layout_alignLeft="@+id/anioMesPosteTextView"
+        android:layout_alignStart="@+id/anioMesPosteTextView"
+        android:textColor="#ffffffff" />
+
+    -->
+
+</RelativeLayout>

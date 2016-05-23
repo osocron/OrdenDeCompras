@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/productTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:focusable="false"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/claveProductoTextView"
+        android:layout_below="@+id/productTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/menosButton"
+        android:layout_alignBottom="@+id/menosButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:focusable="false"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:text="-"
+        android:id="@+id/menosButton"
+        android:layout_below="@+id/productTextView"
+        android:layout_toLeftOf="@+id/cantidadEditText" />
+
+    <EditText
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/cantidadEditText"
+        android:layout_below="@+id/productTextView"
+        android:layout_toLeftOf="@+id/masButton"
+        android:layout_alignBottom="@+id/masButton"
+        android:layout_marginBottom="0dp"
+        android:textSize="12sp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:focusable="false"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:text="+"
+        android:id="@+id/masButton"
+        android:layout_below="@+id/productTextView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/descuentoTextView"
+        android:layout_toStartOf="@+id/cantidadEditText"
+        android:layout_toEndOf="@+id/precioProdTextView"
+        android:layout_below="@+id/claveProductoTextView"
+        android:layout_alignStart="@+id/menosButton"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/preImportetextView"
+        android:layout_below="@+id/menosButton"
+        android:layout_toEndOf="@+id/menosButton"
+        android:layout_alignEnd="@+id/productTextView"
+        android:layout_marginLeft="-10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/precioProdTextView"
+        android:layout_toEndOf="@+id/claveProductoTextView"
+        android:layout_toStartOf="@+id/menosButton"
+        android:layout_alignTop="@+id/descuentoTextView"
+        android:layout_below="@+id/claveProductoTextView"
+        android:layout_alignStart="@+id/claveProductoTextView"
+        android:layout_alignEnd="@+id/claveProductoTextView"
+        android:layout_marginRight="40dp" />
+
+</RelativeLayout>
