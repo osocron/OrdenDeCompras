@@ -1,8 +1,6 @@
 package com.patumecha.osocron.ordendecompras;
 
-/**
- * Created by osocron on 21/07/14.
- */
+
 public final class IntentResult {
 
     private final String contents;
